@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="icon" type="image/x-icon" href="/assets/logo.png">
+    <script src="https://kit.fontawesome.com/fc1b2206b8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>ENGLISH JANALA</title>
+
+</head>
+
+<body>
+
+    <header class="mb-15 ">
+
+        <div class="navbar  bg-base-100 shadow-sm flex justify-between px-8 bg-[#badeff42]">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost sm:hidden md:hidden lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        <li> <button class="btn btn-outline btn-primary"><i class="fa-solid fa-circle-question"></i>
+                                FAQ</button></li>
+                        <li>
+                            <button class="btn btn-outline btn-primary my-3"><i class="fa-solid fa-book-open"></i>
+                                Learn</button>
+                        </li>
+                        <li><button class="btn btn-outline btn-primary"><i
+                                    class="fa-solid fa-arrow-right-from-bracket"></i> Logout</button></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-xl"><span class="font-semibold text-[1.2rem] poppins">English</span> <img
+                        src="assets/logo.png" alt="" srcset=""> <span
+                        class="text-[1.2rem] tiro-bangla-regular font-normal">জানালা</span></a>
+            </div>
+            <div class="navbar-end  hidden sm:flex md:flex lg:flex ">
+                <ul class="menu menu-horizontal px-1">
+                    <button class="btn btn-outline btn-primary"><i class="fa-solid fa-circle-question"></i> FAQ</button>
+                    <button class="btn btn-outline btn-primary mx-3"><i class="fa-solid fa-book-open"></i>
+                        Learn</button>
+                    <button class="btn btn-outline btn-primary"><i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        Logout</button>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="BannerSection w-11/12 m-auto flex flex-col-reverse md:flex-row justify-between items-center ">
+
+            <div class="">
+                <p class="font-extrabold poppins text-[2rem]"><span class="text-blue-400">English</span> is Easy!!</p>
+                <p class="tiro-bangla-regular ">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা
+                  <br>    আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে <br> যাবে অন্য একটি Level এ</p>
+                <input type="text" placeholder="Enter your name" class="input input-primary mt-5" /> <br>
+                <input type="text" placeholder="..............." class="input input-primary my-3" /> <br>
+                <button class="btn btn-primary">Get Started</button>
+            </div>
+            <div class="">
+
+                  <img src="assets/hero-student.png" alt="" srcset="">
+            </div>
+
+        </div>
+
+
+    </header>
+
+    <main class="w-11/12 m-auto text-center">
+
+        <p class="font-extrabold poppins text-[2rem] mb-6"><span class="text-blue-400">Let's </span> Learn Vocabularies</p>
+        <div id="lessonContiner" class=" flex flex-wrap justify-center items-center gap-4 mb-6">
+        </div>
+
+        <div class="bg-[#f8f8f8] py-10">
+
+            <p class="hind-siliguri-light">আপনি এখনো কোন Lesson Select করেন নি</p>
+            <p class="hind-siliguri-light text-[2rem] font-medium">একটি Lesson Select করুন।</p>
+               
+        </div>
+
+
+        <div class="join">
+            <div>
+                <label class="input validator join-item">
+                    <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none"
+                            stroke="currentColor">
+                            <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                        </g>
+                    </svg>
+                    <input type="email" placeholder="mail@site.com" required />
+                </label>
+                <div class="validator-hint hidden">Enter valid email address</div>
+            </div>
+            <button class="btn btn-neutral join-item">Join</button>
+        </div>
+    </main>
+
+    <footer>
+
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
