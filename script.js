@@ -1,10 +1,34 @@
-console.log("hereere");
+
 
 function displayCard(e){
 
        const cardContainer=document.getElementById("cardContainer");
 
-       e.data.forEach(element => {
+       cardContainer.innerHTML="";
+
+       if(e.data.length===0){
+             
+    
+
+             cardContainer.innerHTML=`
+               
+         
+             <div class=" col-span-full flex flex-col justify-center items-center ">
+                <img src="assets/alert-error.png" alt="">
+                <p class="hind-siliguri-light">এই Lesson এ এখনো কোন Vocabulary যুক্ত করা হয়নি।</p>
+                <p class="hind-siliguri-light text-[2rem] font-medium">নেক্সট Lesson এ যান</p>
+              </div>
+              
+             
+             `;
+
+     
+             
+               
+       }
+       else{
+
+             e.data.forEach(element => {
            
              const ele=document.createElement("div");
 
@@ -26,9 +50,31 @@ function displayCard(e){
 
              cardContainer.appendChild(ele);
        });
+              
+       }
+
+     
+}
+
+function CurrentButton(id){
+
+        const arr=document.querySelectorAll(".common");
+
+        arr.forEach(ele =>{
+           
+             ele.classList.remove("bg-[#422ad5]","text-white");
+              
+        });
+
+        document.getElementById(`button${id}`).classList.add("bg-[#422ad5]","text-white");
+
+        console.log(arr);
 }
 
  function  buttonClick(id){
+      
+      CurrentButton(id);
+
       const cardContainer=document.getElementById("cardContainer");
 
       cardContainer.innerHTML="";
@@ -46,7 +92,7 @@ function display(e){
      e.forEach(element => {
             const ele=document.createElement("div");
             ele.innerHTML=`
-                <button onclick="buttonClick(${element.level_no})" class="btn btn-outline btn-primary "><i class="fa-solid fa-book-open"></i>
+                <button id="button${element.level_no}" onclick="buttonClick(${element.level_no})" class="common btn btn-outline btn-primary "><i class="fa-solid fa-book-open"></i>
                         Lesson -${element.level_no}</button>
             `;
             lessonContiner.appendChild(ele);
