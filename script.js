@@ -13,6 +13,19 @@ function CurrentButton(id) {
       console.log(arr);
 }
 
+function manageSpinner(status){
+
+        if(status==true){
+             document.getElementById("sppiner").classList.remove("hidden");
+             document.getElementById("cardContainer").classList.add("hidden");
+        }
+        else{
+
+             document.getElementById("cardContainer").classList.remove("hidden");
+             document.getElementById("sppiner").classList.add("hidden");
+        }
+}
+
 function model_box(data) {
 
       my_modal_1.showModal()
@@ -149,12 +162,16 @@ function displayCard(e) {
 
       }
 
+       manageSpinner(false);
+
 
 }
 
 
 
 function buttonClick(id) {
+
+      manageSpinner(true);
 
       CurrentButton(id);
 
@@ -171,6 +188,7 @@ function buttonClick(id) {
 
 }
 function display(e) {
+
       const lessonContiner = document.getElementById("lessonContiner");
       e.forEach(element => {
             const ele = document.createElement("div");
