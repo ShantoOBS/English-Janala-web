@@ -19,6 +19,8 @@
 </ul>
 
 <h2 id="demo">📱 Demo</h2>
+<img id="mobile-screenshot" width="450" height="1189" alt="Image" src="https://github.com/user-attachments/assets/7db19a5d-bd4e-48c3-946f-dd56b8099b0f" />
+
 <p>Add a screenshot or preview here.</p>
 <p><a href="https://shantoobs.github.io/English-Janala-web/" target="_blank">Live Preview</a></p>
 
